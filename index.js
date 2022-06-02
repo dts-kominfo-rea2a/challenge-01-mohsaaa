@@ -17,15 +17,15 @@ favoriteRestaurant
 // favoriteColor & favoriteRestaurant firstUser, menggunakan set agar tidak duplikat
 const firstFavoriteColor = ["Yellow", "Pink", "White", "Purple"];
 const firstFavoriteRestaurant = ["Bento", "Sushi", "Pancake", "Eggy", "Tempura", "Bento", "Eggy", "Padang", "Tteok", "Sushi", "Sushi"];
-const setFirstFavoriteColor = new Set(firstFavoriteColor);
-const setFirstFavoriteRestaurant = new Set(firstFavoriteRestaurant);
+let setFirstFavoriteColor = new Set(firstFavoriteColor);
+let setFirstFavoriteRestaurant = new Set(firstFavoriteRestaurant);
 
 
 // favoriteColor & favoriteRestaurant secondUser, menggunakan set agar tidak duplikat
 const secondFavoriteColor = ["Blue", "Black", "Grey"];
 const secondFavoriteRestaurant = ["Tempura", "Bento", "Sushi", "Pancake", "Padang", "Katsu", "Geprek", "Pancake", "Eggy"];
-const setSecondFavoriteColor = new Set(secondFavoriteColor);
-const setSecondFavoriteRestaurant = new Set(secondFavoriteRestaurant);
+let setSecondFavoriteColor = new Set(secondFavoriteColor);
+let setSecondFavoriteRestaurant = new Set(secondFavoriteRestaurant);
 
 // firstUser Education
 const firstEducation = [];
@@ -68,20 +68,20 @@ firstUser.name = "Monica";
 firstUser.gender = "Female";
 firstUser.age = 17;
 firstUser.email = "monica@dingdong.com";
-firstUser.favoriteColor = setFirstFavoriteColor;
+firstUser.favoriteColor = [...setFirstFavoriteColor];
 firstUser.isHavePet = "Yes";
 firstUser.education = firstEducation;
-firstUser.favoriteRestaurant = setFirstFavoriteRestaurant;
+firstUser.favoriteRestaurant = [...setFirstFavoriteRestaurant];
 
 const secondUser = new Object();
 secondUser.name = "Wendy";
 secondUser.gender = "Male";
 secondUser.age = "23";
 secondUser.email = "wendy@dingdong.com";
-secondUser.favoriteColor = setSecondFavoriteColor;
+secondUser.favoriteColor = [...setSecondFavoriteColor];
 secondUser.isHavePet = "No";
 secondUser.education = secondEducation;
-secondUser.favoriteRestaurant = setSecondFavoriteRestaurant;
+secondUser.favoriteRestaurant = [...setSecondFavoriteRestaurant];
 
 // TODO: Masukkan hasil akhir dari kedua user di sini
 const users = [];
