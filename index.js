@@ -73,7 +73,7 @@ firstUser.isHavePet = "Yes";
 firstUser.education = firstEducation;
 firstUser.favoriteRestaurant = setFirstFavoriteRestaurant;
 
-const secondUser = {};
+const secondUser = new Object();
 secondUser.name = "Wendy";
 secondUser.gender = "Male";
 secondUser.age = "23";
